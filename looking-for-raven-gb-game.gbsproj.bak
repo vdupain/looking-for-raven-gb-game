@@ -21870,7 +21870,69 @@
                     "collisionGroup": "",
                     "symbol": "actor_17",
                     "script": [],
-                    "startScript": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_SWITCH",
+                            "args": {
+                                "variable": "10",
+                                "choices": 3,
+                                "__collapseCase0": false,
+                                "value0": 1,
+                                "__collapseCase1": false,
+                                "value1": 2,
+                                "__collapseCase2": false,
+                                "value2": 3,
+                                "__collapseCase3": false,
+                                "value3": 4,
+                                "__collapseCase4": false,
+                                "value4": 5,
+                                "__collapseCase5": false,
+                                "value5": 6,
+                                "__collapseCase6": false,
+                                "value6": 7,
+                                "__collapseCase7": false,
+                                "value7": 8,
+                                "__collapseCase8": false,
+                                "value8": 9,
+                                "__collapseCase9": false,
+                                "value9": 10,
+                                "__collapseCase10": false,
+                                "value10": 11,
+                                "__collapseCase11": false,
+                                "value11": 12,
+                                "__collapseCase12": false,
+                                "value12": 13,
+                                "__collapseCase13": false,
+                                "value13": 14,
+                                "__collapseCase14": false,
+                                "value14": 15,
+                                "__collapseCase15": false,
+                                "value15": 16,
+                                "__collapseElse": false,
+                                "__collapse": false
+                            },
+                            "children": {
+                                "true0": [],
+                                "true1": [],
+                                "true2": [],
+                                "true3": [],
+                                "true4": [],
+                                "true5": [],
+                                "true6": [],
+                                "true7": [],
+                                "true8": [],
+                                "true9": [],
+                                "true10": [],
+                                "true11": [],
+                                "true12": [],
+                                "true13": [],
+                                "true14": [],
+                                "true15": [],
+                                "false": []
+                            },
+                            "id": "6a1048ad-7491-4805-8a07-3c251ad832d8"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -21899,6 +21961,21 @@
                             "id": "b8455864-a82d-4515-8ddd-175b04c4a94b"
                         },
                         {
+                            "command": "EVENT_CAMERA_MOVE_TO",
+                            "args": {
+                                "x": {
+                                    "type": "number",
+                                    "value": 0
+                                },
+                                "y": {
+                                    "type": "number",
+                                    "value": 0
+                                },
+                                "speed": 1
+                            },
+                            "id": "8eb91b20-c140-402f-a577-27eaee9c4a6e"
+                        },
+                        {
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
@@ -21921,7 +21998,8 @@
                                     "value": 10
                                 },
                                 "moveType": "horizontal",
-                                "useCollisions": false
+                                "useCollisions": false,
+                                "__comment": true
                             },
                             "id": "b80ae5a6-5668-4c7e-957d-4e44a1191e6b"
                         },
@@ -21945,6 +22023,21 @@
                                 "fadeSpeed": "2"
                             },
                             "id": "e52454f5-1704-44f1-a695-7c03e5268a31"
+                        },
+                        {
+                            "command": "EVENT_CAMERA_MOVE_TO",
+                            "args": {
+                                "x": {
+                                    "type": "number",
+                                    "value": 0
+                                },
+                                "y": {
+                                    "type": "number",
+                                    "value": 0
+                                },
+                                "speed": 0
+                            },
+                            "id": "96d82f40-fb2b-466b-8d28-d841db5d4f53"
                         }
                     ],
                     "leaveScript": []
@@ -23225,8 +23318,8 @@
                                 "command": "EVENT_SWITCH_SCENE",
                                 "args": {
                                     "sceneId": "6469ebf4-a36f-4e1a-b15a-14c645f13c4b",
-                                    "x": 5,
-                                    "y": 22,
+                                    "x": 4,
+                                    "y": 23,
                                     "direction": "",
                                     "fadeSpeed": "2"
                                 },
@@ -34496,17 +34589,17 @@
         }
     ],
     "settings": {
-        "startSceneId": "5a7cb3f6-1023-4903-b1c3-271341d178e0",
-        "startX": 21,
-        "startY": 10,
+        "startSceneId": "45fb2045-c6b3-4c2f-8490-3566379b29fc",
+        "startX": 9,
+        "startY": 17,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": "all",
-        "worldScrollX": 1639,
-        "worldScrollY": 1044,
-        "zoom": 200,
+        "worldScrollX": 25,
+        "worldScrollY": 421,
+        "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
@@ -34534,9 +34627,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            205,
-            313,
-            1489
+            162,
+            250,
+            1229
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
