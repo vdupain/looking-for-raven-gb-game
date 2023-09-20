@@ -23425,16 +23425,6 @@
                     "id": "47e94289-d66e-4941-aa2f-8edda0757c50"
                 },
                 {
-                    "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-                    "args": {
-                        "actorId": "$self$",
-                        "speed": 2,
-                        "__collapse": false,
-                        "__comment": true
-                    },
-                    "id": "676c2850-d41d-4c60-9725-fbcaa58512b6"
-                },
-                {
                     "command": "EVENT_SET_INPUT_SCRIPT",
                     "args": {
                         "input": [
@@ -23605,7 +23595,7 @@
                     "command": "EVENT_ACTOR_HIDE",
                     "args": {
                         "actorId": "e1c50c1e-3a26-4808-af74-366fc175d27e",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "id": "c382b58e-ed38-439b-be3e-b1c9b4ff84ad"
                 },
@@ -23617,18 +23607,11 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": true,
+                        "__label": "Right Button - Select 2nd Player"
                     },
                     "children": {
                         "true": [
-                            {
-                                "command": "EVENT_ACTOR_SHOW",
-                                "args": {
-                                    "actorId": "e1c50c1e-3a26-4808-af74-366fc175d27e",
-                                    "__collapse": true
-                                },
-                                "id": "c9834af8-2715-417e-9dd9-ce1b7c987747"
-                            },
                             {
                                 "command": "EVENT_ACTOR_HIDE",
                                 "args": {
@@ -23638,13 +23621,12 @@
                                 "id": "cc35bed1-7c80-44f9-9dba-e3e84a329833"
                             },
                             {
-                                "command": "EVENT_PLAYER_SET_SPRITE",
+                                "command": "EVENT_ACTOR_SHOW",
                                 "args": {
-                                    "spriteSheetId": "81cff7ec-1216-4c6c-aa66-348e75a48403",
-                                    "persist": true,
-                                    "__collapse": false
+                                    "actorId": "e1c50c1e-3a26-4808-af74-366fc175d27e",
+                                    "__collapse": true
                                 },
-                                "id": "7b9f5b6e-c5fd-41a9-83d8-997900eb76aa"
+                                "id": "c9834af8-2715-417e-9dd9-ce1b7c987747"
                             },
                             {
                                 "command": "EVENT_SET_VALUE",
@@ -23654,7 +23636,7 @@
                                         "type": "number",
                                         "value": 2
                                     },
-                                    "__collapse": false
+                                    "__collapse": true
                                 },
                                 "id": "653cf199-717c-440d-a504-cac43eaf8a6d"
                             }
@@ -23670,31 +23652,26 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": false,
+                        "__label": "Left Button - Select 1st Player"
                     },
                     "children": {
                         "true": [
                             {
-                                "command": "EVENT_ACTOR_SHOW",
-                                "args": {
-                                    "actorId": "38b19e1d-09a8-4612-b453-17036130179f"
-                                },
-                                "id": "1203e458-c96e-4b64-8dcf-d0e341e13eb2"
-                            },
-                            {
                                 "command": "EVENT_ACTOR_HIDE",
                                 "args": {
-                                    "actorId": "e1c50c1e-3a26-4808-af74-366fc175d27e"
+                                    "actorId": "e1c50c1e-3a26-4808-af74-366fc175d27e",
+                                    "__collapse": true
                                 },
                                 "id": "055af06b-3928-4aa5-b730-11aad5a4d376"
                             },
                             {
-                                "command": "EVENT_PLAYER_SET_SPRITE",
+                                "command": "EVENT_ACTOR_SHOW",
                                 "args": {
-                                    "spriteSheetId": "3d7f5138-c810-4d1c-9df6-a02da0c86fe0",
-                                    "persist": true
+                                    "actorId": "38b19e1d-09a8-4612-b453-17036130179f",
+                                    "__collapse": true
                                 },
-                                "id": "a92651a9-9124-467d-8735-3bcbe83b04f1"
+                                "id": "1203e458-c96e-4b64-8dcf-d0e341e13eb2"
                             },
                             {
                                 "command": "EVENT_SET_VALUE",
@@ -23703,7 +23680,8 @@
                                     "value": {
                                         "type": "number",
                                         "value": 1
-                                    }
+                                    },
+                                    "__collapse": true
                                 },
                                 "id": "e7560457-78cf-49a7-a92b-6c3daf29eeda"
                             }
@@ -23719,7 +23697,8 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": true,
+                        "__label": "A Button - Go to 1st Scene"
                     },
                     "children": {
                         "true": [
@@ -23729,18 +23708,23 @@
                                     "input": [
                                         "a",
                                         "left",
-                                        "right"
+                                        "right",
+                                        "up",
+                                        "b",
+                                        "down",
+                                        "start",
+                                        "select"
                                     ],
-                                    "__collapse": true
+                                    "__collapse": false
                                 },
                                 "id": "a405c9cd-4922-45b5-9c7c-55cab77720a3"
                             },
                             {
                                 "command": "EVENT_SWITCH_SCENE",
                                 "args": {
-                                    "sceneId": "6469ebf4-a36f-4e1a-b15a-14c645f13c4b",
-                                    "x": 4,
-                                    "y": 23,
+                                    "sceneId": "5a7cb3f6-1023-4903-b1c3-271341d178e0",
+                                    "x": 15,
+                                    "y": 14,
                                     "direction": "",
                                     "fadeSpeed": "2"
                                 },
@@ -35032,8 +35016,8 @@
         }
     ],
     "settings": {
-        "startSceneId": "5a7cb3f6-1023-4903-b1c3-271341d178e0",
-        "startX": 21,
+        "startSceneId": "8d159e95-cfed-4573-b528-9758e121468d",
+        "startX": 5,
         "startY": 12,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
@@ -35041,8 +35025,8 @@
         "showCollisions": true,
         "showConnections": "all",
         "worldScrollX": 0,
-        "worldScrollY": 1140,
-        "zoom": 400,
+        "worldScrollY": 311,
+        "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
